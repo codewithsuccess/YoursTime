@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <title>YoursTime: best time</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .body {
+            background: url(https://th.bing.com/th/id/OIP.SBuolmZ1OyUsjB5RWyOYNQHaHa?rs=1&pid=ImgDetMain);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1400px;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .world-clock {
+            background-color: rgb(53, 156, 253);
+            padding: 5px;
+            border: 2px solid #0602ff94;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .world-clock p {
+            font-size: 20px;
+        }
+
+        #watch-container {
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            background-color: rgb(65, 137, 201);
+            margin-top: 70px;
+            border-radius: 200px;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-size: 50px;
+            background: url(https://th.bing.com/th/id/OIP.o_9hwOPoGkxwdlfLDFr9AgHaQC?w=115&h=180&c=7&r=0&o=5&pid=1.7);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #watch-container p {
+            color: #551a8b;
+        }
+
+        #watch,
+        #gatey {
+            color: #000000;
+        }
+
+        #footer {
+            margin-top: 75px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+
+        #footer p {
+            font-size: 20px;
+        }
+
+        /* responsive */
+        @media only screen and (max-width: 408px) {
+            #watch-container {
+                height: 300px;
+                width: 300px;
+                font-size: 30px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <nav id="nav">
+            <div class="logo">
+                <a href="/Project 1/index.html"><i>Yours</i><b>Time</b></a>
+            </div>
+            <div class="world-clock">
+                <p>World Clock</p>
+            </div>
+        </nav>
+        <div id="watch-container">
+            <p>Time:</p>
+            <div id="watch"></div>
+            <p>Date:</p>
+            <div id="gatey"></div>
+        </div>
+        <div id="footer">
+            <p>Copyrights &copy; codewithsuccess.</p>
+            <p>All rights reserved 2024.</p>
+        </div>
+    </div>
+
+    <script src="/Project 1/index.js"></script>
+</body>
+
+</html>
